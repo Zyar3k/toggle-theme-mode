@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
+import Navbar from "./components";
+import { ThemeContext } from "./context/ThemeContext";
 import "./styles/_main.scss";
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
     <div className={theme}>
+      <Navbar />
       <div className="background flex">
         <h1 className="text">Hello world! </h1>
 

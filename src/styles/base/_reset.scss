@@ -1,0 +1,31 @@
+@use "../abstracts/colors" as *;
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.light {
+  .text {
+    color: $color-bg-dark;
+  }
+  .background {
+    background-color: $color-bg-light;
+  }
+}
+
+.dark {
+  .text {
+    color: $color-bg-light;
+  }
+  .background {
+    background-color: $color-bg-dark;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
